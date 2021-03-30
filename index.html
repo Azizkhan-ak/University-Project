@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-Jannat</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="mainPageImages/icon.png"
+    />
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="show();">
+
+    <div class="backdrop" onclick="showMobileNav();"></div>
+
+
+    <div class="mobile-navbar">
+      <ul class="main-header_menu__items mobile-navbar_ul">
+        <li class="main-header_menu__item mobile-navbar-item"><a href="#">Home</a></li>
+        <li class="main-header_menu__item mobile-navbar-item" >
+          <a href="contactus.html">Contact Us</a>
+        </li>
+        <li class="main-header_menu__item mobile-navbar-item">
+          <a href="aboutus.html">About Us</a>
+        </li>
+        <li class="main-header_menu__item mobile-navbar-item">
+          <a href="login.html">Login</a>
+        </li>
+        <li class="main-header_menu__item mobile-navbar-item">
+          <a href="signup.html">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+    <!--Nav Bar-->
+    <div class="main-header">
+      <div class="main-header_logo">
+        <div class="three-lines" onClick="showMobileNav();">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+        <div class="main-header_logo__image">
+          <img
+            src="mainPageImages/restaurant.png"
+            alt="A logo showing restaurant"
+            class="main-header_logo__imagtag"
+          />
+        </div>
+        <div class="main-header_logo__name">Al-Jannat</div>
+      </div>
+
+      <div class="main-header_menu">
+        <ul class="main-header_menu__items">
+          <li class="main-header_menu__item"><a href="#">Home</a></li>
+          <li class="main-header_menu__item">
+            <a href="contactus.html">Contact Us</a>
+          </li>
+          <li class="main-header_menu__item">
+            <a href="aboutus.html">About Us</a>
+          </li>
+          <li class="main-header_menu__item">
+            <a href="login.html">Login</a>
+          </li>
+          <li class="main-header_menu__item">
+            <a href="signup.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Carousal-->
+    <div class="carousal">
+      <div class="leftarrow" onClick="updateCarousalLeft();">
+        <img src="mainPageImages/left-arrow.png" alt="" />
+      </div>
+      <div class="rightarrow" onclick="updateCarousal();">
+        <img src="mainPageImages/right-arrow.png" alt="" />
+      </div>
+      <div class="leftright-num">
+        <span class="no makegolden">1</span>
+        <span class="no">2</span>
+        <span class="no">3</span>
+      </div>
+      <div class="carousal-inner">
+        <div class="carousal-inner__item active">
+          <img src="mainPageImages/biryani.webp" alt="" />
+        </div>
+        <div class="carousal-inner__item">
+          <img src="mainPageImages/burger.jpg" alt="" />
+        </div>
+        <div class="carousal-inner__item">
+          <img src="mainPageImages/juice.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!--  menu section -->
+    <h1 class="main-heading_menu">Menu</h1>
+
+    <!-- Beverages main box -->
+    <div class="beverages menu-item">
+      <h2>Beverages</h2>
+      <!-- beverages inner box-->
+      <div id="beverages-items" class="items">
+        <div id="move-left_button" class="goleft" onClick="moveLeft('beverages-item');">
+          <img src="mainPageImages/left-arrow.png" alt="" />
+        </div>
+        <div id="move-right_button" class="goright" onclick="moveRight('beverages-item');">
+          <img src="mainPageImages/right-arrow.png" alt="" />
+        </div>
+        <!-- Beverages item -->
+        <div id="beverages-item1" class="item" onclick="writeInformation('mainPageImages/cocacola.jpg','Coke','Rs. 40');">
+          <div class="item-image">
+            <img src="mainPageImages/cocacola.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Coke</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 40</h6>
+            </div>
+          </div>
+        </div>
+        <div id="beverages-item2" class="item" onclick="writeInformation('mainPageImages/nestle.jpg','Juice','Rs. 40');">
+          <div class="item-image">
+            <img src="mainPageImages/nestle.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Juice</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 40</h6>
+            </div>
+          </div>
+        </div>
+        <div id="beverages-item3" class="item" onclick="writeInformation('mainPageImages/pepsi.jpg','Pepsi','Rs. 60');">
+          <div class="item-image">
+            <img src="mainPageImages/pepsi.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Pepsi</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 60</h6>
+            </div>
+          </div>
+        </div>
+
+        <div id="beverages-item4" class="item"  onclick="writeInformation('mainPageImages/pakola.jpg','Pakola','Rs. 60');">
+          <div class="item-image">
+            <img src="mainPageImages/pakola.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Pakola</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 60</h6>
+            </div>
+          </div>
+        </div>
+        <div id="beverages-item5" class="item"  onclick="writeInformation('mainPageImages/fanta.jpg','Fanta','Rs. 40');">
+          <div class="item-image">
+            <img src="mainPageImages/fanta.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Fanta</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 40</h6>
+            </div>
+          </div>
+        </div>
+        <div id="beverages-item6" class="item" onclick="writeInformation('mainPageImages/dew.jpg','Dew','Rs. 60');">
+          <div class="item-image">
+            <img src="mainPageImages/dew.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Dew</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 60</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  beverages section end-->
+
+    <!-- Spiceymeal main box-->
+    <div class="spiceymeal menu-item">
+      <h2>Spicey Meal</h2>
+      <!-- spiceymeal inner box-->
+      <div id="spiceymeal-items" class="items">
+        <div id="move-left_button" class="goleft" onClick="moveLeft('spiceymeal-item');">
+          <img src="mainPageImages/left-arrow.png" alt="" />
+        </div>
+        <div id="move-right_button" class="goright" onclick="moveRight('spiceymeal-item');">
+          <img src="mainPageImages/right-arrow.png" alt="" />
+        </div>
+        <!--  spiceymeal item-->
+        <div id="spiceymeal-item1" class="item" onclick="writeInformation('mainPageImages/spiceymealCajun-Shrimp-Pasta.jpg','Cajun Pasta','Rs. 400');">
+          <div class="item-image">
+            <img src="mainPageImages/spiceymealCajun-Shrimp-Pasta.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Cajun Pasta</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 400</h6>
+            </div>
+          </div>
+        </div>
+        <div id="spiceymeal-item2" class="item" onclick="writeInformation('mainPageImages/spiceymealChicken-karahi.jpg','Chiken Karahi','Rs. 400');">
+          <div class="item-image">
+            <img src="mainPageImages/spiceymealChicken-karahi.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Chiken Karahi</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 400</h6>
+            </div>
+          </div>
+        </div>
+        <div id="spiceymeal-item3" class="item" onclick="writeInformation('mainPageImages/spiceymealKungpaochiken.jpg','Kung pao','Rs. 200');">
+          <div class="item-image">
+            <img src="mainPageImages/spiceymealKungpaochiken.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Kung Pao</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 200</h6>
+            </div>
+          </div>
+        </div>
+        <div id="spiceymeal-item4" class="item" onclick="writeInformation('mainPageImages/spiceymealMirchikebabs.jpeg','Mirchi Kebabs','Rs. 180');">
+          <div class="item-image">
+            <img src="mainPageImages/spiceymealMirchikebabs.jpeg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Mirchi kebabs</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 180</h6>
+            </div>
+          </div>
+        </div>
+        <div id="spiceymeal-item5" class="item" onclick="writeInformation('mainPageImages/spiceymealBiryani.jpg','Biryani','Rs. 180');">
+          <div class="item-image">
+            <img src="mainPageImages/spiceymealBiryani.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Biryani</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 180</h6>
+            </div>
+          </div>
+        </div>
+        <div id="spiceymeal-item6" class="item" onclick="writeInformation('mainPageImages/spiceymealAlosabzi.jpg','Alo Sabzi','Rs. 160');">
+          <div class="item-image">
+            <img src="mainPageImages/spiceymealAlosabzi.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Alo Sabzi</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 160</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Spiceymeal End-->
+
+    <!-- fastfood main box-->
+    <div class="fastfood menu-item">
+      <h2>Fast Food</h2>
+      <!-- fastfood innner box-->
+      <div id="fastfood-items" class="items">
+        <div id="move-left_button" class="goleft" onClick="moveLeft('fastfood-item');">
+          <img src="mainPageImages/left-arrow.png" alt="" />
+        </div>
+        <div id="move-right_button" class="goright" onclick="moveRight('fastfood-item');">
+          <img src="mainPageImages/right-arrow.png" alt="" />
+        </div>
+
+        <!--fast food item-->
+        <div id="fastfood-item1" class="item" onclick="writeInformation('mainPageImages/fastfoodPizza.cms','Pizza','Rs. 800');">
+          <div class="item-image">
+            <img src="mainPageImages/fastfoodPizza.cms" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Pizza</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 800</h6>
+            </div>
+          </div>
+        </div>
+        <div id="fastfood-item2" class="item"  onclick="writeInformation('mainPageImages/fastfoodClubsandwich.jpg','Club Sandwich','Rs. 200');">
+          <div class="item-image">
+            <img src="mainPageImages/fastfoodClubsandwich.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Club Sandwich</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 200</h6>
+            </div>
+          </div>
+        </div>
+        <div id="fastfood-item3" class="item"  onclick="writeInformation('mainPageImages/fastfoodChikenburger.jpg','Chiken Burger','Rs. 260');">
+          <div class="item-image">
+            <img src="mainPageImages/fastfoodChikenburger.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Chiken Burger</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 260</h6>
+            </div>
+          </div>
+        </div>
+        <div id="fastfood-item4" class="item"  onclick="writeInformation('mainPageImages/fastfoodChikennuggets.jpg','Chiken Nuggets','Rs. 160');">
+          <div class="item-image">
+            <img src="mainPageImages/fastfoodChikennuggets.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Chiken Nuggets</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 160</h6>
+            </div>
+          </div>
+        </div>
+        <div id="fastfood-item5" class="item"  onclick="writeInformation('mainPageImages/fastfoodFries.jpg','Fries','Rs. 100');">
+          <div class="item-image">
+            <img src="mainPageImages/fastfoodFries.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Fries</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 100</h6>
+            </div>
+          </div>
+        </div>
+        <div id="fastfood-item6" class="item"  onclick="writeInformation('mainPageImages/fastfoodTikkabreast.png','Tikka Breast','Rs. 260');">
+          <div class="item-image">
+            <img src="mainPageImages/fastfoodTikkabreast.png" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Tikka Breast</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 260</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  fastfood section end-->
+
+    <!--sweets main box-->
+    <div class="sweets menu-item">
+      <h2>Sweets</h2>
+      <!-- sweets inner box-->
+      <div id="sweets-items" class="items">
+        <div id="move-left_button" class="goleft" onClick="moveLeft('sweets-item');">
+          <img src="mainPageImages/left-arrow.png" alt="" />
+        </div>
+        <div id="move-right_button" class="goright" onclick="moveRight('sweets-item');">
+          <img src="mainPageImages/right-arrow.png" alt="" />
+        </div>
+        <!-- sweets item-->
+        <div id="sweets-item1" class="item" onclick="writeInformation('mainPageImages/sweetFaloda.jpg','Falooda','Rs. 180');">
+          <div class="item-image">
+            <img src="mainPageImages/sweetFaloda.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Falooda</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 180</h6>
+            </div>
+          </div>
+        </div>
+
+        <div id="sweets-item2" class="item" onclick="writeInformation('mainPageImages/sweetGulabjamun.jpg','Gulab Jamun','Rs. 320');">
+          <div class="item-image">
+            <img src="mainPageImages/sweetGulabjamun.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Gulab Jamun</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 320</h6>
+            </div>
+          </div>
+        </div>
+        <div id="sweets-item3" class="item" onclick="writeInformation('mainPageImages/sweetIcecream.jpg','Ice Cream','Rs. 150');">
+          <div class="item-image">
+            <img src="mainPageImages/sweetIcecream.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Ice Cream</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 150</h6>
+            </div>
+          </div>
+        </div>
+
+        <div id="sweets-item4" class="item" onclick="writeInformation('mainPageImages/sweetJaleebi.jpg','Jaleebi','Rs. 120');">
+          <div class="item-image">
+            <img src="mainPageImages/sweetJaleebi.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Jaleebi</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 120</h6>
+            </div>
+          </div>
+        </div>
+        <div id="sweets-item5" class="item"  onclick="writeInformation('mainPageImages/sweetDhodhdulari.jpg','Doodh Dulari','Rs. 140');">
+          <div class="item-image">
+            <img src="mainPageImages/sweetDhodhdulari.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Doodh Dulari</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 140</h6>
+            </div>
+          </div>
+        </div>
+        <div id="sweets-item6" class="item"  onclick="writeInformation('mainPageImages/sweetBerfi.jpg','Berfi','Rs. 80');">
+          <div class="item-image">
+            <img src="mainPageImages/sweetBerfi.jpg" alt="" />
+          </div>
+          <div class="item-spec">
+            <div class="item-spec_title">
+              <h6>Berfi</h6>
+            </div>
+            <div class="item-spec_price">
+              <h6>Rs. 80</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  footer  -->
+    <footer class="main-footer">
+      <h1>Al-Jannat Official</h1>
+    </footer>
+    <script src="orderitem.js"></script>
+    <script src="shared.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

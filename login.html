@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-Jannat</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="mainPageImages/icon.jpg"
+    />
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="contactus.css" />
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+    <div class="backdrop" onclick="showMobileNav();"></div>
+    <div class="mobile-navbar">
+      <ul class="main-header_menu__items mobile-navbar_ul">
+        <li class="main-header_menu__item mobile-navbar-item"><a href="index.html">Home</a></li>
+        <li class="main-header_menu__item mobile-navbar-item" >
+          <a href="contactus.html">Contact Us</a>
+        </li>
+        <li class="main-header_menu__item mobile-navbar-item">
+          <a href="#">About Us</a>
+        </li>
+        <li class="main-header_menu__item mobile-navbar-item">
+          <a href="login.html">Login</a>
+        </li>
+        <li class="main-header_menu__item mobile-navbar-item">
+          <a href="signup.html">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+    <!--Nav Bar-->
+
+    <div class="main-header">
+      <div class="main-header_logo">
+        <div class="three-lines" onClick="showMobileNav();">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+        <div class="main-header_logo__image">
+          <img
+            src="mainPageImages/restaurant.png"
+            alt="A logo showing restaurant"
+            class="main-header_logo__imagtag"
+          />
+        </div>
+        <div class="main-header_logo__name">Al-Jannat</div>
+      </div>
+
+      <div class="main-header_menu">
+        <ul class="main-header_menu__items">
+          <li class="main-header_menu__item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="main-header_menu__item"><a href="contactus.html">Contact Us</a></li>
+          <li class="main-header_menu__item"><a href="aboutus.html">About Us</a></li>
+          <li class="main-header_menu__item"><a href="#">Login</a></li>
+          <li class="main-header_menu__item"><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--  form  -->
+    <div class="bg-image"></div>
+      <div class="form">
+        <h1 class="main-heading">Login</h1>
+        <form action="LoginHandler" method="Post">
+          <label for="email">Email:</label>
+          <input type="email" name="loginemail" id="email" required />
+          <label for="password">Password:</label>
+          <input type="password" name="loginpassword" id="password" required />
+          <input type="submit" value="Login" />
+          <a href="ForgotPassword.html" id="forget-password">Forgot password...</a>
+        </form>
+      </div>
+    
+    
+
+    <!--  footer  -->
+    <footer class="main-footer">
+      <h1>Al-Jannat @2021 alright reserved</h1>
+    </footer>
+    <script src="shared.js"></script>
+  </body>
+</html>

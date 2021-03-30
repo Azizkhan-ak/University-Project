@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-Jannat</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="mainPageImages/icon.png"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(
+          to bottom right,
+          #5f4c4c67,
+          whitesmoke,
+          #5f4c4c67
+        );
+      }
+      .content {
+        width: 20rem;
+        height: 60%;
+      }
+      .img {
+        width: 100%;
+        height: 80%;
+        background-image: url("mainPageImages/signupsuccessfull.png");
+        background-repeat: no-repeat;
+        background-position: left 60% top 0%;
+      }
+      .message {
+        width: 100%;
+        text-align: center;
+      }
+      @media (max-width: 21rem) {
+        .content {
+          width: 13rem;
+          height: 35%;
+        }
+        .img{
+          background-size: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="img">
+        </div>
+        <div class="message">
+          <h1>Sign up successful.</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

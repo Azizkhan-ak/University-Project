@@ -1,0 +1,14 @@
+[type='submit'] {
+  display: inline-block;
+}
+.forget {
+  text-decoration: none;
+  color: white;
+}
+.forget:hover {
+  border-bottom: 3px solid rgb(243, 243, 65);
+  color: yellow;
+  padding: 0 0 4px 0;
+  margin-left: 5px;
+
+}

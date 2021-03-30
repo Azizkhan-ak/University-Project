@@ -1,0 +1,80 @@
+.background {
+  background-image: url("/mainPageImages/biryani.webp");
+  background-position: 10% 30%;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.aboutus {
+  background-color: #1b0e0e79;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  color: white;
+  border: 2px solid #5f4c4c71;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 3px 3px 3px #5f4c4c71;
+}
+.image {
+  width: 50%;
+  height: 100%;
+  border: 2px solid #5f4c4c;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about {
+  width: 45%;
+  height: 100%;
+}
+.ourplace-about {
+  padding-left: 2rem; 
+}
+.ourteam-about,
+.dpendamic {
+  padding-right: 2rem;
+}
+
+.about p {
+  line-height: 24px;
+  text-align: justify;
+}
+
+@media (max-width: 43rem) {
+  .aboutus {
+    flex-direction: column;
+    height: 70vh;
+  } 
+  .image {
+    width: 100%;
+    height: 50%;
+  }
+  .about {
+    width: 97%;
+    height: 45%;
+  }
+  
+  .ourplace-about {
+    padding-left: 0rem; 
+  }
+  .ourplace-image {
+    order: -1;
+  }
+  .aboutus {
+    padding-right: 0;
+    background-color: #1b0e0eb0;
+  }
+  .ourteam-about {
+    padding-right: 0;
+  }
+}

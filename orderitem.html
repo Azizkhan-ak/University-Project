@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-Jannat</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="mainPageImages/icon.png"
+    />
+    <link rel="stylesheet" href="orderitem.css" />
+  </head>
+  <body onload="rewriteOrder();">
+      <form action="OrderItemHandler" method="Post">
+    <div class="ordered-item_box">
+      <div class="ordered-item">
+        <div class="main-image_box">
+          <img
+            src=""
+            alt=""
+            id="imagetag-Id"
+            class="imagetag"
+          />
+        </div>
+        <div class="description">
+          <div class="title" id="ordered-title"></div>
+          <div class="price" id="ordered-price"></div>
+        </div>
+      </div>
+      <form action="OrderItemHandler">
+        <input type="text" name="itemname" id="form-title" style="display: none;">
+        <input type="text" name="itemprice" id="form-price" style="display: none;">
+        <input type="submit" name="sub" id="order-now" value="Order now" class="order-now_button">
+      </form>
+      
+    </div>
+  </form>
+    <script src="orderitem.js"></script>
+  </body>
+</html>

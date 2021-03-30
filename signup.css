@@ -1,0 +1,32 @@
+[name="firstname"],
+[name="lastname"] {
+  display: inline-block;
+  width: 47%;
+}
+
+[name="password"],
+[name="confirmpassword"] {
+  display: inline-block;
+  width: 47%;
+}
+
+@media (max-width: 48rem) {
+  form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 30rem) {
+  [name="firstname"],
+  [name="lastname"] {
+    display: inline-block;
+    width: 100%;
+  }
+
+  [name="password"],
+  [name="confirmpassword"] {
+    display: inline-block;
+    width: 100%;
+  }
+  
+}
